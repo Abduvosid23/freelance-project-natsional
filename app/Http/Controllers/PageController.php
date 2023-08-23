@@ -21,11 +21,6 @@ class PageController extends Controller
         return view('contact');
     }
 
-    public function products()
-    {
-        return view('products');
-    }
-
     public function deliver()
     {
         return view('deliver');

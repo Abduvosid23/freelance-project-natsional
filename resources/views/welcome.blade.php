@@ -132,7 +132,7 @@
 
                                 <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                                 <div class="d-flex justify-content-between">
-                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="{{route('products')}}">Batafsil</a>
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="{{route('products.index')}}">Batafsil</a>
                                     <a class="btn btn-sm btn-dark rounded py-2 px-4" href="{{route('deliver')}}">Harid qilish</a>
                                 </div>
                             </div>
@@ -158,7 +158,7 @@
 
                                 <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                                 <div class="d-flex justify-content-between">
-                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="{{route('products')}}">Batafsil</a>
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="{{route('products.index')}}">Batafsil</a>
                                     <a class="btn btn-sm btn-dark rounded py-2 px-4" href="{{route('deliver')}}">Harid qilish</a>
                                 </div>
                             </div>
@@ -184,7 +184,7 @@
 
                                 <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                                 <div class="d-flex justify-content-between">
-                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="{{route('products')}}">Batafsil</a>
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="{{route('products.index')}}">Batafsil</a>
                                     <a class="btn btn-sm btn-dark rounded py-2 px-4" href="{{route('deliver')}}">Harid qilish</a>
                                 </div>
                             </div>
@@ -238,7 +238,7 @@
         <!-- Video Start -->
 
 
-        <!-- Service Start -->
+        {{-- <!-- Service Start -->
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -315,7 +315,7 @@
                 </div>
             </div>
         </div>
-        <!-- Service End -->
+        <!-- Service End --> --}}
 
 
 
@@ -325,23 +325,23 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title text-center text-primary text-uppercase">Our Team</h6>
-                    <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Staffs</span></h1>
+                    <h6 class="section-title text-center text-primary text-uppercase">Hodimlar</h6>
+                    <h1 class="mb-5">Bizning <span class="text-primary text-uppercase">Hodimlar</span></h1>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="rounded shadow overflow-hidden">
                             <div class="position-relative">
-                                <img class="img-fluid" src="img/team-1.jpg" alt="">
+                                <img class="img-fluid" src="img/Asadullo.jpg" alt="">
                                 <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-primary mx-1" href="https://t.me/+998999042420"><i class="fab fa-telegram"></i></a>
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                             <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
+                                <h5 class="fw-bold mb-0">Asadullo</h5>
+                                <small>+998999042420</small>
                             </div>
                         </div>
                     </div>
@@ -351,13 +351,13 @@
                                 <img class="img-fluid" src="img/team-2.jpg" alt="">
                                 <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-primary mx-1" href="https://t.me/+998935701100"><i class="fab fa-telegram"></i></a>
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                             <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
+                                <h5 class="fw-bold mb-0">Abdullo</h5>
+                                <small>+998935701100</small>
                             </div>
                         </div>
                     </div>
@@ -367,13 +367,13 @@
                                 <img class="img-fluid" src="img/team-3.jpg" alt="">
                                 <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-primary mx-1" href="https://t.me/+998935271100"><i class="fab fa-telegram"></i></a>
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                             <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
+                                <h5 class="fw-bold mb-0">Farruh</h5>
+                                <small>+998935271100</small>
                             </div>
                         </div>
                     </div>
@@ -399,6 +399,6 @@
         <!-- Team End -->
 
 
-        
+
 
     </x-layouts.main>

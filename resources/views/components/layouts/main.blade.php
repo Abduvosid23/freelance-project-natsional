@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="/img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,15 +21,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -55,11 +55,11 @@
                         <div class="col-lg-7 px-5 text-start">
                             <div class="h-100 d-inline-flex align-items-center py-2 me-4">
                                 <i class="fa fa-envelope text-primary me-2"></i>
-                                <p class="mb-0">example@gmail.com</p>
+                                <p class="mb-0">natsionalkraska@mail.ru</p>
                             </div>
                             <div class="h-100 d-inline-flex align-items-center py-2">
                                 <i class="fa fa-phone-alt text-primary me-2"></i>
-                                <p class="mb-0">+998999042420</p>
+                                <p class="mb-0">+998935271100</p>
                             </div>
                         </div>
                         <div class="col-lg-5 px-5 text-end">
@@ -83,7 +83,7 @@
                             <div class="navbar-nav mr-auto py-0">
                                 <a href="{{route('welcome')}}" class="nav-item nav-link">Bosh Sahifa</a>
                                 <a href="{{route('about')}}" class="nav-item nav-link">Biz haqimizda</a>
-                                <a href="{{route('products')}}" class="nav-item nav-link">Mahsulotlar</a>
+                                <a href="{{route('products.index')}}" class="nav-item nav-link">Mahsulotlar</a>
                                 <a href="{{route('deliver')}}" class="nav-item nav-link">Yetkazib berish</a>
                                 <a href="{{route('contact')}}" class="nav-item nav-link">Aloqa</a>
 
@@ -130,8 +130,8 @@
                     <div class="col-md-6 col-lg-3">
                         <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Komakay, Andijon Uzbekistan</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+998999042420</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>monsteer@gmail.com</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+998935271100</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>natsionalkraska@mail.ru</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -202,7 +202,7 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

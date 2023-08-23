@@ -17,6 +17,7 @@ class Products extends Model
         'title',
         'short_content',
         'content',
+        'price',
         'photo'
     ];
     public function user()

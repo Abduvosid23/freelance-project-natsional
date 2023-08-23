@@ -14,7 +14,37 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('Mahsulotlar royhati') }}
+
+
+
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Nomi</th>
+                            <th scope="col">Haqida</th>
+                            <th scope="col">Narxi</th>
+                            <th scope="col">Categoriya</th>
+                            <th scope="col">Update</th>
+                            <th scope="col">Delete</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($products as $product )
+                          <tr>
+                            <th scope="row">{{$product->id}}</th>
+                            <td>{{$product->title}}</td>
+                            <td>{{$product->short_content}}</td>
+                            <td>{{$product->price}}</td>
+                            <td>{{$product->category->name}}</td>
+                            <td><button class="btn btn-primary">Ozgartirish</button></td>
+                            <td><button class="btn btn-danger">Ochirish</button></td>
+                          </tr>
+                          @endforeach
+                        </tbody>
+                      </table>
+
                 </div>
             </div>
         </div>
