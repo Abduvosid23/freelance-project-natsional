@@ -86,7 +86,9 @@
                                 <a href="{{route('products.index')}}" class="nav-item nav-link">Mahsulotlar</a>
                                 <a href="{{route('deliver')}}" class="nav-item nav-link">Yetkazib berish</a>
                                 <a href="{{route('contact')}}" class="nav-item nav-link">Aloqa</a>
-
+                                @auth
+                                <a href="{{ route('home') }}" class="=nav-item nav-link">Dashboard</a>
+                                @endauth
                     </nav>
                 </div>
             </div>
@@ -149,14 +151,7 @@
                                 <a class="btn btn-link" href="">Terms & Condition</a>
                                 <a class="btn btn-link" href="">Support</a>
                             </div>
-                            <div class="col-md-6">
-                                <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
-                                <a class="btn btn-link" href="">Food & Restaurant</a>
-                                <a class="btn btn-link" href="">Spa & Fitness</a>
-                                <a class="btn btn-link" href="">Sports & Gaming</a>
-                                <a class="btn btn-link" href="">Event & Party</a>
-                                <a class="btn btn-link" href="">GYM & Yoga</a>
-                            </div>
+
                         </div>
                     </div>
                 </div>

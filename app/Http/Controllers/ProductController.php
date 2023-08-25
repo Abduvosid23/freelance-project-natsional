@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Products;
+use Illuminate\Support\Facades\Storage;
 use App\Http\Requests\StorePostRequest;
 
 class ProductController extends Controller
@@ -41,32 +42,53 @@ class ProductController extends Controller
 
 
              ]);
-
-            //  PostCreated::dispatch($products);
-
              return redirect()->route('products.index');
 
             }
 
-    public function show($id)
+    public function show(Products $products)
     {
-        //
+        return view('products.show')->with([
+            'product'=>$products,
+            'categories'=>Category::all(),
+        ]);
     }
 
 
-    public function edit($id)
+    public function edit(Products $products)
     {
-        //
+        return view('products.edit');
     }
 
-    public function update(Request $request, $id)
+    public function update(StorePostRequest $request, Products $product)
     {
-        //
+        if($request->hasFile('photo')){
+            if(isset($product->photo)){
+                Storage::delete($product->photo);
+            }
+            $name =$request->file('photo')->getClientOriginalName();
+            $path = $request->file('photo')->storeAs('product-photos',$name);
+             }
+        $product->update([
+
+        'title'=> $request->title,
+        'short_content'=> $request->short_content,
+        'content'=> $request->content,
+        'photo' => $path ?? $product->photo,
+        ]);
+        return redirect()->route('products.show',['product'=>$product->id]);
+
     }
 
 
-    public function destroy($id)
+    public function destroy(Products $product)
     {
-        //
+
+        if(isset($product->photo)){
+            Storage::delete($product->photo);
+        }
+    $product->delete();
+
+    return redirect()->route('products.index');
     }
 }

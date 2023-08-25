@@ -32,7 +32,7 @@
 
                           <p class="text-body mb-3">{{$product->short_content}}</p>
                           <div class="d-flex justify-content-between">
-                              <a class="btn btn-sm btn-primary rounded py-2 px-4" href="{{route('products.index')}}">Batafsil</a>
+                              <a class="btn btn-sm btn-primary rounded py-2 px-4" href="{{route('products.show',['product'=>$product->id])}}">Batafsil</a>
                               <a class="btn btn-sm btn-dark rounded py-2 px-4" href="{{route('deliver')}}">Harid qilish</a>
                           </div>
                       </div>

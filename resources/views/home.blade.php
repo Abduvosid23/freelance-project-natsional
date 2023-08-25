@@ -38,8 +38,8 @@
                             <td>{{$product->short_content}}</td>
                             <td>{{$product->price}}</td>
                             <td>{{$product->category->name}}</td>
-                            <td><button class="btn btn-primary">Ozgartirish</button></td>
-                            <td><button class="btn btn-danger">Ochirish</button></td>
+                            <td><a href="route('products.update',['product'=>$product->id])" class="btn btn-primary">Ozgartirish</a></td>
+                            <td><a href="route('products.destroy',['product'=>$product->id])" class="btn btn-danger">Ochirish</a></td>
                           </tr>
                           @endforeach
                         </tbody>
