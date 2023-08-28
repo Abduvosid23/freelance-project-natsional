@@ -31,17 +31,18 @@
                           </tr>
                         </thead>
                         <tbody>
-                            @foreach ($products as $product )
-                          <tr>
-                            <th scope="row">{{$product->id}}</th>
-                            <td>{{$product->title}}</td>
-                            <td>{{$product->short_content}}</td>
-                            <td>{{$product->price}}</td>
-                            <td>{{$product->category->name}}</td>
-                            <td><a href="route('products.update',['product'=>$product->id])" class="btn btn-primary">Ozgartirish</a></td>
-                            <td><a href="route('products.destroy',['product'=>$product->id])" class="btn btn-danger">Ochirish</a></td>
-                          </tr>
-                          @endforeach
+                        @foreach ($products as $product)
+                    <tr>
+                        <th scope="row">{{ $product->id }}</th>
+                        <td>{{ $product->title }}</td>
+                        <td>{{ $product->short_content }}</td>
+                        <td>{{ $product->price }}</td>
+                        <td>{{ $product->category->name }}</td>
+                        <td><a href="{{ route('products.update', ['product' => $product->id]) }}" class="btn btn-primary">Ozgartirish</a></td>
+                        <td><a href="{{ route('products.destroy', ['product' => $product->id]) }}" class="btn btn-danger">Ochirish</a></td>
+                    </tr>
+                         @endforeach
+
                         </tbody>
                       </table>
 
