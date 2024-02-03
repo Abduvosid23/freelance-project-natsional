@@ -46,44 +46,40 @@ class ProductController extends Controller
 
             }
 
-    public function show(Products $products)
+    public function show(Products $product)
     {
         return view('products.show')->with([
-            'product'=>$products,
+            'product'=>$product,
             'categories'=>Category::all(),
+            
         ]);
     }
 
 
-    public function edit(Products $products)
+    public function edit(Products $product)
     {
-        return view('products.edit');
+        return view('products.update')->with(['product'=>$product]);
     }
 
     public function update(StorePostRequest $request, Products $product)
     {
         if($request->hasFile('photo')){
             if(isset($product->photo)){
-                Storage::delete($product->photo);
-            }
+            Storage::delete($product->photo);}
             $name =$request->file('photo')->getClientOriginalName();
             $path = $request->file('photo')->storeAs('product-photos',$name);
              }
         $product->update([
-
         'title'=> $request->title,
         'short_content'=> $request->short_content,
         'content'=> $request->content,
         'photo' => $path ?? $product->photo,
         ]);
-        return redirect()->route('products.show',['product'=>$product->id]);
+        return redirect()->route('home',['product'=>$product->id]);
 
     }
-
-
     public function destroy(Products $product)
     {
-
         if(isset($product->photo)){
             Storage::delete($product->photo);
         }

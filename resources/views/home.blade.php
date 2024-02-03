@@ -38,8 +38,16 @@
                         <td>{{ $product->short_content }}</td>
                         <td>{{ $product->price }}</td>
                         <td>{{ $product->category->name }}</td>
+
                         <td><a href="{{ route('products.update', ['product' => $product->id]) }}" class="btn btn-primary">Ozgartirish</a></td>
-                        <td><a href="{{ route('products.destroy', ['product' => $product->id]) }}" class="btn btn-danger">Ochirish</a></td>
+                       <td> <form action="{{ route('products.destroy',['product'=>$product->id])}}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger" >
+                                O'chirish
+                            </button>
+                        </form></td>
+
                     </tr>
                          @endforeach
 

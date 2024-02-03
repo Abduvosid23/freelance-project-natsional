@@ -15,6 +15,8 @@
             <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
                   <div class="room-item shadow rounded overflow-hidden">
                       <div class="position-relative">
+
+
                           <img src="{{ asset('storage/'.$product->photo) }}" alt="" width="350" height="350">
                           <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">${{$product->price}}</small>
                       </div>
